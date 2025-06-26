@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+    }
+    .navbar{
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        top: 0%;
+        height: 25px;
+        border: 1px solid rgb(173, 172, 172);
+        padding-top: 5px;
+    }
+    .navbar li{
+        float: left;
+        list-style: none;
+        margin-left: 20px;
+    }
+    .navbar a{
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: gray;
+        font-size: 10px;
+    }
+    .so a{
+       margin-left: 100px;
+    }
+    .so1 a{
+        margin-left: 800px;
+    }
+    /* navbar1 */
+    .navbar1{
+        position: fixed;
+        top: 30px;
+        width: 100%;
+        background-color: white;
+        height: 45px;
+        padding-top: 15px;
+        border: 1px solid rgb(173, 172, 172) ;
+    }
+    .navbar1 li{
+        float: left;
+        list-style: none;
+        margin-left: 30px;
+    }
+    .navbar1 a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 11px;
+        text-decoration: none;
+        color: black;
+    }
+    .so2 img{
+        width: 100px;
+        height: 40px;
+        margin-left: 100px;
+        margin-top: -8px;
+    }
+    .so3 a{
+        margin-left: 200px;
+    }
+    /* navbar2 */
+    .navbar2{
+        width: 100%;
+        margin-top: 90px;
+        height: 50px;
+        background-color: rgb(219, 215, 215);
+        padding-top: 7px;
+    }
+    .navbar2 p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-left: 130px;
+    }
+    .navbar3{
+        margin-top: -40px;
+    }
+    .navbar3 button{
+        background-color: black;
+        width: 110px;
+        height: 25px;
+        border: none;
+        border-radius: 8px;
+        margin-left: 1000px;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* wood */
+    .wood{
+        width: 100%;
+        height: 445px;
+        background-color: rgb(242, 242, 242);
+        margin-top: 15px;
+    }
+    .wood img{
+        background-color: rgb(245, 242, 242);
+    }
+    /* wood1 */
+    .wood1{
+        margin-top: -300px;
+        margin-left: 600px;
+    }
+    .wood1 h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .wood1 p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+    }
+    /* door */
+    .door{
+        width: 100%;
+        height: 400px;
+    }
+    .door h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .aa{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: small;
+        text-align: center;
+    }
+    /* door1 */
+    .door1{
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    .door1 img{
+        width: 60px;
+        margin-left: 30px;
+        height: 60px;
+    }
+    .door1 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+    }
+    .door1 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: -5px;
+    }
+    /* door2 */
+    .door2{
+        margin-left: 550px;
+        margin-top: -105px;
+    }
+    .door2 img{
+        width: 60px;
+        margin-left: 35px;
+        height: 60px;
+    }
+    .door2 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+    }
+    .door2 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 13px;
+    }
+    /* door3 */
+    .door3{
+        margin-left: 820px;
+        margin-top: -110px;
+    }
+    .door3 img{
+        width: 60px;
+        margin-left: 10px;
+        height: 60px;
+    }
+    .door3 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -4px;
+    }
+    .door3 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+    /* door4 */
+    .door4{
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    .door4 img{
+        width: 60px;
+        margin-left: 30px;
+        height: 60px;
+    }
+    .door4 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+    }
+    .door4 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+    /* door5 */
+    .door5{
+        margin-left: 550px;
+        margin-top: -105px;
+    }
+    .door5 img{
+        width: 60px;
+        margin-left: 35px;
+        height: 60px;
+    }
+    .door5 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+    }
+    .door5 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 5px;
+    }
+    /* door6 */
+    .door6{
+        margin-left: 800px;
+        margin-top: -110px;
+    }
+    .door6 img{
+        width: 60px;
+        margin-left: 30px;
+        height: 60px;
+    }
+    .door6 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -4px;
+    }
+    .door6 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+/* sood */
+.sood{
+    width: 100%;
+    height: 420px;
+    padding-top: 50px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+}
+.sood h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.q{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-top: -20px;
+    text-align: center;
+}
+/* sood1 */
+    .sood1{
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    .sood1 img{
+        width: 60px;
+        margin-left: 40px;
+        height: 60px;
+    }
+    .sood1 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -5px;
+    }
+    .sood1 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 15px;
+    }
+     /* door2 */
+     .sood2{
+        margin-left: 550px;
+        margin-top: -105px;
+    }
+    .sood2 img{
+        width: 60px;
+        margin-left: 35px;
+        height: 60px;
+    }
+    .sood2 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+    }
+    .sood2 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+    /* sood3 */
+    .sood3{
+        margin-left: 820px;
+        margin-top: -110px;
+    }
+    .sood3 img{
+        width: 60px;
+        margin-left: 30px;
+        height: 60px;
+    }
+    .sood3 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -4px;
+    }
+    .sood3 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 15px;
+    }
+        /* sood4 */
+        .sood4{
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    .sood4 img{
+        width: 60px;
+        margin-left: 30px;
+        height: 60px;
+    }
+    .sood4 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+        margin-left: -5px;
+    }
+    .sood4 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 2px;
+    }
+    /* sood5 */
+    .sood5{
+        margin-left: 550px;
+        margin-top: -105px;
+    }
+    .sood5 img{
+        width: 60px;
+        margin-left: 35px;
+        height: 60px;
+    }
+    .sood5 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+        margin-left: 18px;
+    }
+    .sood5 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 5px;
+    }
+    /* sood6 */
+    .sood6{
+        margin-left: 810px;
+        margin-top: -110px;
+    }
+    .sood6 img{
+        width: 60px;
+        margin-left: 30px;
+        height: 60px;
+    }
+    .sood6 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -4px;
+        margin-left: 30px;
+    }
+    .sood6 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 0px;
+    }
+    /* card */
+    .card{
+        width: 100%;
+        height: 320px;
+        background-color: rgb(229, 229, 231);
+        margin-top: -20px;
+        padding-top: 50px;
+    }
+    .card h2{
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .ds{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        font-size: 12px;
+        margin-top: -16px;
+    }
+    /* card1 */
+    .card1{
+        margin-left: 130px;
+        margin-top: 50px;
+        width: 200px;
+    }
+    .card1 img{
+        width: 60px;
+        margin-left: 70px;
+        height: 60px;
+    }
+    .card1 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+        margin-left: 55px;
+    }
+    .card1 p{
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 2px;
+    }
+    /* card2 */
+    .card2{
+        margin-left: 380px;
+        margin-top: -120px;
+        width: 200px;
+    }
+    .card2 img{
+        width: 60px;
+        margin-left: 75px;
+        height: 60px;
+    }
+    .card2 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -8px;
+        margin-left: 45px;
+    }
+    .card2 p{
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 5px;
+    }
+    /* card3 */
+    .card3{
+        margin-left: 630px;
+        margin-top: -110px;
+        width: 200px;
+    }
+    .card3 img{
+        width: 60px;
+        margin-left: 65px;
+        height: 60px;
+    }
+    .card3 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -4px;
+        margin-left: 42px;
+    }
+    .card3 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 0px;
+        text-align: center;
+    }
+     /* card4 */
+     .card4{
+        margin-left: 910px;
+        margin-top: -125px;
+        width: 200px;
+    }
+    .card4 img{
+        width: 60px;
+        margin-left: 65px;
+        height: 60px;
+    }
+    .card4 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -4px;
+        margin-left: 28px;
+    }
+    .card4 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    /* card5 */
+    .card5{
+
+        text-align: center;
+        margin-top: 40px;
+    }
+    .card5 button{
+        width: 120px;
+        background-color: black;
+        border: none;
+        border-radius: 6px;
+        height: 25px;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .card5 button a{
+        text-decoration: none;
+        color: white;
+    }
+    /* good */
+    .good{
+        padding-top: 50px;
+    }
+    .good h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    .go{
+        text-align: center;
+        font-size: 12px;
+        margin-top: -10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    /* good1 */
+    .good1{
+        margin-left: 200px;
+        width: 250px;
+        margin-top: 40px;
+    }
+    .good1 img{
+        width: 60px;
+        margin-left: 100px;
+        height: 60px;
+    }
+    .good1 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -2px;
+        margin-left: 80px;
+    }
+    .good1 p{
+        text-align: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 5px;
+    }
+    /* good2 */
+    .good2{
+        margin-left: 500px;
+        margin-top: -125px;
+        width: 250px;
+    }
+    .good2 img{
+        width: 60px;
+        margin-left: 90px;
+        height: 60px;
+    }
+    .good2 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -4px;
+        margin-left: 90px;
+    }
+    .good2 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    /* good3 */
+    .good3{
+        margin-left: 810px;
+        margin-top: -125px;
+        width: 250px;
+    }
+    .good3 img{
+        width: 60px;
+        margin-left: 90px;
+        height: 60px;
+    }
+    .good3 h5{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+        margin-top: -4px;
+        margin-left: 60px;
+    }
+    .good3 p{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-left: 0px;
+        text-align: center;
+    }
+    /* vood */
+    .vood{
+        width: 100%;
+        height: 250px;
+        margin-top: 50px;
+        background-color: #D9AFD9;
+        padding-top: 100px;
+    }
+    .vood1{
+        width: 1000px;
+        margin-left: 130px;
+        height: 160px;
+        background-color: white;
+        border: 1px solid rgb(212, 209, 209);
+        border-radius: 15px;
+    }
+    .vood1 img{
+        width: 120px;
+        margin-top: 20px;
+        margin-left: 200px;
+        height: 120px;
+    }
+    .vood2{
+        margin-left: 500px;
+        margin-top: -130px;
+    }
+    .vood2 h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    /* add */
+    .add{
+        margin-top: 50px;
+    }
+    .add h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+    .add p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        margin-left: 200px;
+    }
+    /* ZOO */
+    .zoo{
+        width: 100%;
+        height: 160px;
+        padding-left: 150px;
+        background-color: rgb(239, 251, 255);
+        margin-top: 80px;
+        padding-top: 20px;
+    }
+    .zoo h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .zoo p{
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .zoo a{
+        font-size: 14px;
+        text-decoration: none;
+        color: rgb(90, 90, 255);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+<body>
+    <div class="navbar">
+        <li class="so"><a href="">BUSINESS</a></li>
+        <li><a href="">INDIVIDUAL</a></li>
+        <li><a href="">INVESTOR</a></li>
+        <li class="so1"><a href="">Explore Airtel</a></li>
+    </div>
+    <div class="navbar1">
+        <li class="so2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwYlS-e4srI2PsM2qdAnK_MTfIAQ-zIGqmw&s"></li>
+        <li class="so3"><a href="">Airtel Black</a></li>
+        <li><a href="">Prepaid</a></li>
+        <li><a href="">Postpaid</a></li>
+        <li><a href="">Wi-Fi</a></li>
+        <li><a href="">DTH</a></li>
+        <li><a href="">Bank</a></li>
+        <li><a href="">Airtel Finance</a></li>
+    </div>
+    <div class="navbar2">
+        <p>Get Credit Limit up ₹5 Lakhs ✔️₹500 Amazon Voucher</p>
+    </div>
+    <div class="navbar3">
+        <button type="button">Apply Now</button>
+    </div>
+    <div class="wood">
+        <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/apply_frame.png">
+        <div class="wood1">
+            <h2>Apply for Credit Card - Airtel Finance</h2>
+            <p>A credit card gives you the power to save big with annual cashbacks and plenty of<br> rewards. Get amazing offers across multiple categories – lifestyle, travel, shopping,<br> and more. Complete a simple application process on the Airtel Thanks app and get<br> ready to step into a world of hassle-free payments.</p>
+        </div>
+        </div>
+        <div class="door">
+            <h2>Features of Credit Card</h2>
+            <p class="aa">Big savings and cashback offers, now with Credit Card</p>
+            <div class="door1">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/feature_icon_1.svg">
+                <h5>Higher credit limit</h5>
+                <p>Credit limit up to ₹5 lacs</p>
+            </div>
+            <div class="door2">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/feature_icon_2.svg">
+                <h5>Huge annual savings</h5>
+                <p>Save up to ₹16,000</p>
+            </div>
+            <div class="door3">
+                <img src="	https://assets.airtel.in/teams/simplycms/ADTECH/images/106_100.png">
+                <h5>Joining Fees</h5>
+                <p>Pay low joining fees</p>
+            </div>
+            <!--  -->
+            <div class="door4">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/feature_icon_4.svg">
+                <h5>Low annual fee</h5>
+                <p>Just ₹500 as annual fee</p>
+            </div>
+            <div class="door5">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/feature_icon_5.svg">
+                <h5>100% digital process</h5>
+                <p>Apply on the Thanks app</p>
+            </div>
+            <div class="door6">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/feature_icon_6.svg">
+                <h5>Relaxed eligibility</h5>
+                <p>18-70 years old can apply</p>
+            </div>
+        </div>
+        <div class="sood">
+            <h2>Benefits of Credit Card</h2>
+            <p class="q">Experience a privileged lifestyle with a credit card</p>
+            <div class="sood1">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/benefits_icon_1.svg">
+                <h5>25% off on recharges</h5>
+                <p>Paid via Airtel Thanks</p>
+            </div>
+            <div class="sood2">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/benefits_icon_2.svg">
+                <h5>10% off on delivery</h5>
+                <p>Zomato, bigbasket, Swiggy</p>
+            </div>
+            <div class="sood3">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/benefits_icon_3.svg">
+                <h5>10% cashback offers</h5>
+                <p>Utility bills via Thanks</p>
+            </div>
+            <div class="sood4">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/benefits_icon_4.svg">
+                <h5>Extra 1% cashback</h5>
+                <p>On all other spends</p>
+            </div>
+            <div class="sood5">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/benefits_icon_5.svg">
+                <h5>Airport lounge</h5>
+                <p>4x lounge access/year</p>
+            </div>
+            <div class="sood6">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/benefits_icon_6.svg">
+                <h5>Fuel waiver</h5>
+                <p>1% fuel surcharge waiver</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>How to Apply for a Credit Card?</h2>
+            <p class="ds">Applying for a credit card is easy. Follow the steps below:</p>
+            <div class="card1">
+                <img src="	https://assets.airtel.in/teams/simplycms/ADTECH/images/eligibility_icon1.png">
+                <h5>Get Airtel App</h5>
+                <p>Download the app and go to<br> Shop section</p>
+            </div>
+            <div class="card2">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/eligibility_icon2_new.png">
+                <h5>Tap Airtel Finance</h5>
+                <p>Click on the credit card banner</p>
+            </div>
+            <div class="card3">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/Steps_img_3_new.svg">
+                <h5>Select Apply Now</h5>
+                <p>Now fill up the complete<br> application form</p>
+            </div>
+            <div class="card4">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/eligibility_icon3.png">
+                <h5>Complete digital KYC</h5>
+                <p>The card will be delivered to you<br> very soon</p>
+            </div>
+            <div class="card5">
+               <button type="button"><a href="apply.html">Apply Now</a></button>
+            </div>
+        </div>
+        <div class="good">
+            <h2>Credit Card Eligibility</h2>
+            <p class="go">Fulfill these eligibility criteria to get the Credit Card!</p>
+            <div class="good1">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/credit_1.png">
+                <h5>Resident status</h5>
+                <p>The credit card applicant must be an Indian<br> resident or a non-resident Indian.</p>
+            </div>
+            <div class="good2">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/credit_2.png">
+                <h5>Age Limit</h5>
+                <p>Age of the primary cardholder should range<br> between 18 and 70 years.</p>
+            </div>
+            <div class="good3">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/credit_3.png">
+                <h5>Documents Required</h5>
+                <p>PAN card or Form 60, Residential, Identity,<br> and Income proof, Colour Photograph</p>
+            </div>
+        </div>
+        <div class="vood">
+            <div class="vood1">
+                <img src="https://assets.airtel.in/teams/simplycms/ADTECH/images/qr_credit_new.png">
+            </div>
+            <div class="vood2">
+                <h2>Scan the QR code to get a<br> Credit Card</h2>
+            </div>
+        </div>
+        <div class="add">
+            <h2>FAQs on Credit Card</h2>
+            <p>What is a credit card and how does it work?</p>
+            <p>How do I apply for a credit card using the Thanks app?</p>
+            <p>Can non-Airtel users also apply for a credit card?</p>
+            <p>What is the credit limit on a credit card?</p>
+            <p>What is the interest rate on a credit card?</p>
+        </div>
+        <div class="zoo">
+            <h2>What is a Credit Card?</h2>
+            <p>A credit card is a card that is issued by a bank and acts as a line of credit from the bank itself. The user of a credit card is provided with a pre-specified credit limit, which<br> can be used to make purchases, pay bills, and more.</p>
+            <a href="">VIEW MORE</a>
+        </div>
+
+</body>
+</html>
